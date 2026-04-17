@@ -57,6 +57,22 @@
 - 工期预估
 - 报价区间
 
+## English
+I help founders and small teams fix webhook, bot deployment, and production infrastructure problems.
+
+What I do:
+- Telegram / Feishu / Slack bot deployment
+- Webhook integration and callback debugging
+- Docker Compose / Nginx / Traefik production fixes
+- Remote server deployment and public URL setup
+- Fast diagnosis for broken automation pipelines
+
+Available for:
+- one-off fixes
+- deployment cleanup
+- webhook reliability work
+- production debugging
+
 ## 联系方式
 - Email: 1781946773@qq.com
 
