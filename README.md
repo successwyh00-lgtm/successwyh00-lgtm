@@ -1,49 +1,69 @@
-# Hi, I'm successwyh00-lgtm
+# successwyh00-lgtm
 
-我目前主要承接以下开发与运维需求：
+做 AI 机器人部署、Webhook 自动化、Docker/Nginx 线上故障排查与修复。
 
-- 飞书 / Telegram / Slack 机器人接入与部署
-- GitHub Action / Webhook / 自动通知流自动化
-- AI Agent / Chatbot 私有部署与工具接入
-- Docker / Nginx / 回调异常 / 线上 502 故障排查修复
+如果你现在遇到的是：
+- 飞书 / Telegram / Slack 机器人接不起来
+- Webhook 一直校验失败、回调不通、消息不回
+- Docker Compose 服务异常、Nginx 502、反向代理配置混乱
+- 想把 AI Agent / Chatbot 部署到自己的服务器并接入企业消息平台
 
-## Services
+我可以直接帮你排查、部署、修好，并尽量把链路跑通到可用。
 
-### 1. 机器人部署与接入
-- 飞书机器人
-- Telegram 机器人
-- Slack 机器人
-- GitHub 通知机器人
+## 我能做什么
 
-### 2. 自动化工作流
+### 1) 机器人接入与部署
+- 飞书机器人接入、事件订阅、消息回调
+- Telegram / Slack 机器人部署与消息收发
+- GitHub 通知机器人、Webhook 到消息平台转发
+- AI Agent / Chatbot 私有部署与接入消息平台
+
+### 2) 自动化工作流
 - GitHub issue / PR / comment / label 驱动自动化
-- Webhook 与消息平台联动
-- 邮件 / 飞书 / Telegram / Slack 通知集成
+- Webhook 与飞书 / Telegram / Slack 联动
+- 邮件、飞书、Telegram、Slack 通知集成
+- 业务告警、审批、状态同步自动推送
 
-### 3. 故障排查与修复
-- Webhook 校验失败
-- Nginx 502 / upstream 异常
-- Docker Compose 服务异常
-- 回调不通 / 消息不回 / API 接入失败
+### 3) 线上故障排查与修复
+- Webhook 校验失败 / 回调超时 / 签名错误
+- Nginx 502 / upstream 异常 / 反向代理故障
+- Docker Compose 服务起不来 / 容器反复重启
+- API 接入失败 / 消息不回 / 链路时通时不通
 
-## Case Study
+## 适合找我的场景
+- 已经有服务器，但机器人或回调链路一直跑不通
+- 业务急着上线，需要尽快把消息通知、自动回复、工作流联动打通
+- 线上服务已经挂了，需要远程排障并恢复可用
+- 想做企业内部 AI 助手，但缺人完成部署、接入与运维
 
-已完成真实企业消息机器人部署与排障案例（敏感信息已打码），包括：
-- Docker Compose 编排
-- Nginx 反向代理
-- Webhook 接入与故障修复
+## 真实案例方向
+已完成真实企业消息机器人部署与排障案例（敏感信息已打码），包含：
+- Docker Compose 编排与服务拆分
+- Nginx 反向代理与回调入口配置
+- Webhook 接入、签名校验、回调修复
 - 机器人消息收发链路恢复
-- 天气查询等功能增强
+- 基于现有机器人继续增加天气查询等功能
 
-## Contact
+## 合作方式
+你只需要先发我这些信息：
+1. 你想实现什么效果
+2. 当前卡在哪一步、报什么错
+3. 当前部署方式（Docker / 宝塔 / 直接 Python / Nginx 等）
+4. 是否能提供服务器、代码仓库、日志或报错截图
 
+我会尽快给你：
+- 能不能做
+- 建议方案
+- 工期预估
+- 报价区间
+
+## 联系方式
 - Email: 1781946773@qq.com
 
-## Payment
-
-支持以下收款方式：
+## 收款方式
 - 微信
 - 支付宝
 - 银行卡转账
 
-如果你有机器人部署、自动化集成、线上故障修复相关需求，欢迎联系我。
+## 一句话说明
+如果你有“机器人部署不上、Webhook 不通、Nginx 502、容器异常、AI Agent 接不进去”这类问题，欢迎直接联系我。
