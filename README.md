@@ -1,77 +1,94 @@
 # successwyh00-lgtm
 
-做 AI 机器人部署、Webhook 自动化、Docker/Nginx 线上故障排查与修复。
+我专做：AI 机器人部署、Webhook / 反向代理链路修复、Docker / Nginx 线上故障排查，以及把“卡住的自动化”直接救活并落地。
 
 如果你现在遇到的是：
-- 飞书 / Telegram / Slack 机器人接不起来
-- Webhook 一直校验失败、回调不通、消息不回
-- Docker Compose 服务异常、Nginx 502、反向代理配置混乱
-- 想把 AI Agent / Chatbot 部署到自己的服务器并接入企业消息平台
+- 飞书 / Telegram / Slack / GitHub Webhook 接不起来
+- Docker Compose 服务反复重启、Nginx 502 / 504、回调不通
+- AI Agent / Bot 能本地跑、但上到服务器就坏
+- OAuth / OIDC / redirect_uri / proxy / tunnel 配置混乱
+- 想把一个开源项目部署到 VPS，但缺最后那 20% 的部署、接线、排障能力
 
-我可以直接帮你排查、部署、修好，并尽量把链路跑通到可用。
+我可以直接帮你定位问题、给出最小修复路径，并把链路尽量跑通到可用。
 
-## 我能做什么
+## 我能直接解决什么
 
-### 1) 机器人接入与部署
-- 飞书机器人接入、事件订阅、消息回调
-- Telegram / Slack 机器人部署与消息收发
-- GitHub 通知机器人、Webhook 到消息平台转发
-- AI Agent / Chatbot 私有部署与接入消息平台
+### 1. 机器人与 AI Agent 部署
+- 飞书 / Telegram / Slack 机器人接入与事件回调
+- AI Agent / Chatbot 私有化部署到 VPS / Docker / 反向代理环境
+- Webhook、消息网关、异步 worker、消息回发链路打通
+- GitHub / 表单 / 第三方事件到消息平台通知整合
 
-### 2) 自动化工作流
+### 2. 线上故障排查与恢复
+- Webhook 校验失败、签名错误、回调超时
+- Nginx 502 / 504、upstream 失效、子路径部署异常
+- OAuth / OIDC 登录失败、redirect_uri 错误、代理后端口串错
+- Docker Compose 服务起不来、容器重启、环境变量错配
+- “本地正常、线上不正常”的部署类疑难问题
+
+### 3. 自动化与集成落地
 - GitHub issue / PR / comment / label 驱动自动化
-- Webhook 与飞书 / Telegram / Slack 联动
-- 邮件、飞书、Telegram、Slack 通知集成
-- 业务告警、审批、状态同步自动推送
+- 飞书 / Telegram / Slack 与业务系统联动
+- 告警、审批、状态同步自动推送
+- 现有开源项目的部署补全、文档补全、接入补全
 
-### 3) 线上故障排查与修复
-- Webhook 校验失败 / 回调超时 / 签名错误
-- Nginx 502 / upstream 异常 / 反向代理故障
-- Docker Compose 服务起不来 / 容器反复重启
-- API 接入失败 / 消息不回 / 链路时通时不通
+## 适合直接找我的场景
+- 已经有代码和服务器，但就是跑不通
+- 产品急着上线，需要尽快恢复可用或打通链路
+- 开源项目能用一半，但部署、域名、HTTPS、Webhook 这部分卡住
+- 想找人远程接手排障、部署、修复，而不是只听概念建议
 
-## 适合找我的场景
-- 已经有服务器，但机器人或回调链路一直跑不通
-- 业务急着上线，需要尽快把消息通知、自动回复、工作流联动打通
-- 线上服务已经挂了，需要远程排障并恢复可用
-- 想做企业内部 AI 助手，但缺人完成部署、接入与运维
+## 真实案例（可打码展示）
+### 案例 1：飞书 Hermes 机器人部署 / 回调修复
+- 打通飞书事件订阅、消息接收、Hermes 回发链路
+- 修复签名 / 加密 / 回调校验问题
+- 恢复机器人可用并继续扩展功能
 
-## 真实案例方向
-已完成真实企业消息机器人部署与排障案例（敏感信息已打码），包含：
-- Docker Compose 编排与服务拆分
-- Nginx 反向代理与回调入口配置
-- Webhook 接入、签名校验、回调修复
-- 机器人消息收发链路恢复
-- 基于现有机器人继续增加天气查询等功能
+### 案例 2：hermes-webui 线上部署
+- 本地与远程双环境部署
+- 处理反向代理、子路径访问、Docker 服务编排问题
+- 最终通过公网稳定访问
 
-## 合作方式
-你只需要先发我这些信息：
+### 案例 3：Hermes self-evolution 调试与修复
+- 修复真实技能演化流程中的约束与评分逻辑问题
+- 补测试、做 commit，并推进到可提交状态
+- 不是只分析问题，而是直接改到能跑
+
+## 你找我合作时，最好先给这些信息
 1. 你想实现什么效果
-2. 当前卡在哪一步、报什么错
-3. 当前部署方式（Docker / 宝塔 / 直接 Python / Nginx 等）
+2. 现在卡在哪一步 / 报什么错
+3. 你的部署方式（Docker / 宝塔 / 直接 Python / Nginx / Cloudflare 等）
 4. 是否能提供服务器、代码仓库、日志或报错截图
 
-我会尽快给你：
+我会尽快回复你：
 - 能不能做
-- 建议方案
+- 最小修复方案
 - 工期预估
 - 报价区间
 
+## 可直接找我做的任务
+- 机器人部署不上，帮你接起来
+- Webhook / OAuth / OIDC 一直失败，帮你排查修复
+- Docker / Nginx / Cloudflare / Tunnel 配置混乱，帮你梳理并恢复
+- 开源项目不会部署，帮你落地到服务器
+- 已经线上报错，帮你远程救火
+
 ## English
-I help founders and small teams fix webhook, bot deployment, and production infrastructure problems.
+I help founders and small teams ship and fix production integrations.
 
 What I do:
-- Telegram / Feishu / Slack bot deployment
+- Bot deployment for Feishu / Telegram / Slack
 - Webhook integration and callback debugging
-- Docker Compose / Nginx / Traefik production fixes
-- Remote server deployment and public URL setup
+- Docker Compose / Nginx / Cloudflare / reverse-proxy fixes
+- VPS deployment for AI agents and open-source tools
 - Fast diagnosis for broken automation pipelines
 
-Available for:
-- one-off fixes
+Best fit:
+- one-off urgent fixes
 - deployment cleanup
 - webhook reliability work
 - production debugging
+- turning a half-working OSS project into a usable deployment
 
 ## 联系方式
 - Email: 1781946773@qq.com
@@ -81,5 +98,5 @@ Available for:
 - 支付宝
 - 银行卡转账
 
-## 一句话说明
-如果你有“机器人部署不上、Webhook 不通、Nginx 502、容器异常、AI Agent 接不进去”这类问题，欢迎直接联系我。
+一句话：
+如果你有“部署不上、回调不通、Nginx 502、容器异常、Webhook/OAuth 链路混乱、AI Agent 接不进去”这类问题，欢迎直接联系我。
